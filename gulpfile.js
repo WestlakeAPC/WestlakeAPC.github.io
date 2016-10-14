@@ -44,7 +44,8 @@ gulp.task('browser-sync', ['sass', 'jade', 'typescript', 'jekyll-build'], functi
 gulp.task('jade', function() {
     return gulp.src('_jade/*.jade')
         .pipe(jade())
-        .pipe(gulp.dest('.'));
+        .pipe(gulp.dest('.'))
+        .pipe(browserSync.reload({stream:true}));
 });
 
 /**
@@ -56,7 +57,8 @@ gulp.task('typescript', function () {
             noImplicitAny: true,
             out: './output.js'
         }))
-        .pipe(gulp.dest('.'));
+        .pipe(gulp.dest('.'))
+        .pipe(browserSync.reload({stream:true}));
 });
 
 /**
@@ -69,9 +71,8 @@ gulp.task('sass', function () {
             onError: browserSync.notify
         }))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-        .pipe(gulp.dest('_site/css'))
-        .pipe(browserSync.reload({stream:true}))
-        .pipe(gulp.dest('css'));
+        .pipe(gulp.dest('css'))
+        .pipe(browserSync.reload({stream:true}));
 });
 
 /**
@@ -79,10 +80,10 @@ gulp.task('sass', function () {
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-    gulp.watch('_scss/*.scss', ['sass']);
+    gulp.watch('_scss/*.scss', ['sass', 'jekyll-rebuild']);
     gulp.watch(['*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
-    gulp.watch(['_jade/*'], ['jade']);
-    gulp.watch(['_ts/*'], ['typescript']);
+    gulp.watch(['_jade/*'], ['jade', 'jekyll-rebuild']);
+    gulp.watch(['_ts/*'], ['typescript', 'jekyll-rebuild']);
 });
 
 /**
