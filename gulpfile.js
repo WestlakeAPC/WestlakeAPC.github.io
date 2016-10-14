@@ -4,6 +4,7 @@ var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 var jade        = require('gulp-jade');
+var ts          = require('gulp-typescript');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -29,7 +30,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 /**
  * Wait for jekyll-build, then launch the Server
  */
-gulp.task('browser-sync', ['sass', 'jade', 'jekyll-build'], function() {
+gulp.task('browser-sync', ['sass', 'jade', 'typescript', 'jekyll-build'], function() {
     browserSync({
         server: {
             baseDir: '_site'
@@ -43,6 +44,18 @@ gulp.task('browser-sync', ['sass', 'jade', 'jekyll-build'], function() {
 gulp.task('jade', function() {
     return gulp.src('_jade/*.jade')
         .pipe(jade())
+        .pipe(gulp.dest('.'));
+});
+
+/**
+ * Gulp Task for TypeScript compilation
+ */
+gulp.task('typescript', function () {
+    return gulp.src('_ts/*.ts')
+        .pipe(ts({
+            noImplicitAny: true,
+            out: './output.js'
+        }))
         .pipe(gulp.dest('.'));
 });
 
@@ -69,6 +82,7 @@ gulp.task('watch', function () {
     gulp.watch('_scss/*.scss', ['sass']);
     gulp.watch(['*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
     gulp.watch(['_jade/*'], ['jade']);
+    gulp.watch(['_ts/*'], ['typescript']);
 });
 
 /**
