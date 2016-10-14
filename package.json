@@ -1,31 +1,31 @@
 {
-  "name": "browser-sync-jekyll",
+  "name": "westlake-apc",
   "version": "0.0.0",
-  "description": "A starter project including full setup for Jekyll, GulpJS, SASS & BrowserSync",
+  "description": "Westlake APC Website, including full setup for Jekyll, GulpJS, SASS & BrowserSync",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Shane Osbourne",
-  "license": "ISC",
+  "author": "Eli Bradley",
+  "license": "Apache-2.0",
   "devDependencies": {
     "gulp": "^3.8.8",
     "gulp-sass": "^2.1.0",
     "browser-sync": "^1.3.7",
-    "gulp-autoprefixer": "1.0.0"
+    "gulp-autoprefixer": "1.0.0",
+    "gulp-jade": "^1.1.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync.git"
+    "url": "https://github.com/WestlakeAPC/WestlakeAPC.github.io.git"
   },
   "keywords": [
-    "jekyll",
-    "gulp",
-    "sass",
-    "browsersync"
+    "swift",
+    "app",
+    "education"
   ],
   "bugs": {
-    "url": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync/issues"
+    "url": "https://github.com/WestlakeAPC/WestlakeAPC.github.io/issues"
   },
-  "homepage": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync"
+  "homepage": "https://WestlakeAPC.github.io/"
 }
