@@ -1,9 +1,11 @@
 # WestlakeAPC.github.io
 The Westlake APC public website.
 
-Build your Jade and Sass sources by running the following:
+**PLEASE BUILD YOUR JADE, SASS, AND TS SOURCES BEFORE COMMITTING**:
 
 ```bash
 npm install
 gulp
 ````
+
+**OTHERWISE, GITHUB PAGES WILL READ HTML, CSS, AND JS SOURCES FROM EARLIER COMMITS, AND THE WEBSITE WILL NOT CHANGE.**
