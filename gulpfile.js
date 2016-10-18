@@ -52,10 +52,12 @@ gulp.task('jade', function() {
  * Gulp Task for TypeScript compilation
  */
 gulp.task('typescript', function () {
-    return gulp.src('_ts/*.ts')
-        .pipe(ts())
+    var tsProject = ts.createProject('tsconfig.json');
+
+    return tsProject.src() // instead of gulp.src(...)
+        .pipe(tsProject()).js
         .pipe(gulp.dest('js'))
-        .pipe(browserSync.reload({stream:true}));
+        .pipe(browserSync.reload({stream:true}))
 });
 
 /**
