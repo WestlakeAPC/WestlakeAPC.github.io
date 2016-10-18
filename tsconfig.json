@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "module": "amd",
+    "target": "es3",
+    "sourceMap": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

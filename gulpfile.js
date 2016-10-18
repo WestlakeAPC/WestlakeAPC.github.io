@@ -53,11 +53,8 @@ gulp.task('jade', function() {
  */
 gulp.task('typescript', function () {
     return gulp.src('_ts/*.ts')
-        .pipe(ts({
-            noImplicitAny: true,
-            out: './output.js'
-        }))
-        .pipe(gulp.dest('.'))
+        .pipe(ts())
+        .pipe(gulp.dest('js'))
         .pipe(browserSync.reload({stream:true}));
 });
 
