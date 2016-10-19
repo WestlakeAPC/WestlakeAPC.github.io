@@ -42,7 +42,7 @@ gulp.task('browser-sync', ['sass', 'jade', 'typescript', 'jekyll-build'], functi
  * Gulp Task for jade compilation
  */
 gulp.task('jade', function() {
-    return gulp.src('_jade/*.jade')
+    return gulp.src('_jade/**/*.jade')
         .pipe(jade())
         .pipe(gulp.dest('.'))
         .pipe(browserSync.reload({stream:true}));
