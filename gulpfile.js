@@ -79,10 +79,10 @@ gulp.task('sass', function () {
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-    gulp.watch('_scss/*.scss', ['sass', 'jekyll-rebuild']);
+    gulp.watch('_scss/**/*', ['sass', 'jekyll-rebuild']);
     gulp.watch(['*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
-    gulp.watch(['_jade/*'], ['jade', 'jekyll-rebuild']);
-    gulp.watch(['_ts/*'], ['typescript', 'jekyll-rebuild']);
+    gulp.watch(['_jade/**/*'], ['jade', 'jekyll-rebuild']);
+    gulp.watch(['_ts/**/*'], ['typescript', 'jekyll-rebuild']);
 });
 
 /**
