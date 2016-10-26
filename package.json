@@ -9,13 +9,13 @@
   "author": "Eli Bradley",
   "license": "Apache-2.0",
   "devDependencies": {
-    "gulp": "^3.8.8",
-    "gulp-sass": "^2.1.0",
     "browser-sync": "^1.3.7",
+    "gulp": "^3.8.8",
     "gulp-autoprefixer": "1.0.0",
     "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.1.0",
     "gulp-typescript": "^3.0.2",
-    "typescript":"^2.0.3"
+    "typescript": "^2.0.6"
   },
   "repository": {
     "type": "git",
