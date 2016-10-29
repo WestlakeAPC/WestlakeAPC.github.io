@@ -5,6 +5,8 @@ var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 var jade        = require('gulp-jade');
 var ts          = require('gulp-typescript');
+var shrinkwrap  = require('gulp-shrinkwrap');
+var yarn        = require('gulp-yarn');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -86,8 +88,23 @@ gulp.task('watch', function () {
 });
 
 /**
+ * NPM shrinkwrap task.
+ */
+gulp.task('shrinkwrap', function () {
+    return gulp.src('package.json')
+        .pipe(shrinkwrap())      // just like running `npm shrinkwrap`
+        .pipe(gulp.dest('./'));  // writes newly created `npm-shrinkwrap.json` to the location of your choice
+});
+
+/**
+ * Yarnfile generation task.
+ */
+gulp.src(['./package.json'])
+    .pipe(yarn());
+
+/**
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
 gulp.task('default', ['browser-sync', 'watch']);
-gulp.task('build', ['sass', 'jade', 'typescript', 'jekyll-build']);
+gulp.task('build', ['sass', 'jade', 'typescript', 'jekyll-build', 'shrinkwrap']);
