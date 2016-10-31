@@ -1,15 +1,15 @@
-var gulp = require('gulp');
-var browserSync = require('browser-sync');
-var sass = require('gulp-sass');
-var prefix = require('gulp-autoprefixer');
-var cp = require('child_process');
-var jade = require('gulp-jade');
-var ts = require('gulp-typescript');
-var shrinkwrap = require('gulp-shrinkwrap');
-var yarn = require('gulp-yarn');
+let gulp        = require('gulp');
+let browserSync = require('browser-sync');
+let sass        = require('gulp-sass');
+let prefix      = require('gulp-autoprefixer');
+let cp          = require('child_process');
+let jade        = require('gulp-jade');
+let ts          = require('gulp-typescript');
+let shrinkwrap  = require('gulp-shrinkwrap');
+let yarn        = require('gulp-yarn');
 
-var jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
-var messages = {
+let jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
+let messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
 
