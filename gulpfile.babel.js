@@ -101,7 +101,9 @@ export function watch() {
  * NPM shrinkwrap task.
  */
 const npmShrinkwrap = () => gulp.src('package.json')
-    .pipe(shrinkwrap())
+    .pipe(shrinkwrap({
+        dev: true
+    }))
     .pipe(gulp.dest('./'));
 
 /**
