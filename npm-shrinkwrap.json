@@ -2801,13 +2801,13 @@
                 }
               }
             },
-            "async": {
-              "version": "0.2.10",
-              "from": "async@0.2.10"
-            },
             "camelcase": {
               "version": "1.2.1",
               "from": "camelcase@1.2.1"
+            },
+            "async": {
+              "version": "0.2.10",
+              "from": "async@0.2.10"
             },
             "window-size": {
               "version": "0.1.0",

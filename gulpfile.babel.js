@@ -104,12 +104,12 @@ const npmShrinkwrap = () => gulp.src('package.json')
     .pipe(shrinkwrap({
         dev: true
     }))
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('.'));
 
 /**
  * Yarnfile generation task.
  */
-const yarnShrinkwrap = () => gulp.src(['package.json'])
+const yarnShrinkwrap = () => gulp.src('package.json')
     .pipe(yarn());
 
 /**
