@@ -2801,21 +2801,21 @@
                 }
               }
             },
-            "camelcase": {
-              "version": "1.2.1",
-              "from": "camelcase@1.2.1"
-            },
             "async": {
               "version": "0.2.10",
               "from": "async@0.2.10"
             },
-            "window-size": {
-              "version": "0.1.0",
-              "from": "window-size@0.1.0"
+            "camelcase": {
+              "version": "1.2.1",
+              "from": "camelcase@1.2.1"
             },
             "wordwrap": {
               "version": "0.0.2",
               "from": "wordwrap@0.0.2"
+            },
+            "window-size": {
+              "version": "0.1.0",
+              "from": "window-size@0.1.0"
             },
             "yargs": {
               "version": "3.10.0",
