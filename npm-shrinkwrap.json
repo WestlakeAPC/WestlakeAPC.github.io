@@ -925,13 +925,13 @@
               "version": "5.2.1",
               "from": "qs@5.2.1"
             },
-            "tough-cookie": {
-              "version": "2.2.2",
-              "from": "tough-cookie@2.2.2"
-            },
             "window-size": {
               "version": "0.1.4",
               "from": "window-size@0.1.4"
+            },
+            "tough-cookie": {
+              "version": "2.2.2",
+              "from": "tough-cookie@2.2.2"
             },
             "http-signature": {
               "version": "0.11.0",
@@ -4821,13 +4821,13 @@
                   "version": "2.1.0",
                   "from": "is-extglob@>=2.1.0 <3.0.0"
                 },
-                "is-glob": {
-                  "version": "3.1.0",
-                  "from": "is-glob@>=3.1.0 <4.0.0"
-                },
                 "isarray": {
                   "version": "0.0.1",
                   "from": "isarray@0.0.1"
+                },
+                "is-glob": {
+                  "version": "3.1.0",
+                  "from": "is-glob@>=3.1.0 <4.0.0"
                 },
                 "readable-stream": {
                   "version": "1.0.34",
