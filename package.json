@@ -1,7 +1,7 @@
 {
   "name": "westlake-apc",
   "version": "0.1.0",
-  "description": "Westlake APC Website, including full setup for Jekyll, GulpJS, SASS & BrowserSync",
+  "description": "The Westlake APC public website (and future club purpose statement).",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
