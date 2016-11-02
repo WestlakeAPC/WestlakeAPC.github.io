@@ -1,12 +1,14 @@
-let gulp        = require('gulp');
-let browserSync = require('browser-sync');
-let sass        = require('gulp-sass');
-let prefix      = require('gulp-autoprefixer');
-let cp          = require('child_process');
-let jade        = require('gulp-jade');
-let ts          = require('gulp-typescript');
-let shrinkwrap  = require('gulp-shrinkwrap');
-let yarn        = require('gulp-yarn');
+'use strict';
+
+import gulp from 'gulp';
+import browserSync from 'browser-sync';
+import sass from 'gulp-sass';
+import prefix from 'gulp-autoprefixer';
+import cp from 'child_process';
+import jade from 'gulp-jade';
+import ts from 'gulp-typescript';
+import shrinkwrap from 'gulp-shrinkwrap';
+import yarn from 'gulp-yarn';
 
 let jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 let messages = {
