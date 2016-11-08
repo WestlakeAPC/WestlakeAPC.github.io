@@ -1129,17 +1129,13 @@
                 }
               }
             },
-            "asn1": {
-              "version": "0.1.11",
-              "from": "asn1@0.1.11"
-            },
             "assert-plus": {
               "version": "0.1.5",
               "from": "assert-plus@0.1.5"
             },
-            "async": {
-              "version": "2.1.2",
-              "from": "async@2.1.2"
+            "asn1": {
+              "version": "0.1.11",
+              "from": "asn1@0.1.11"
             },
             "bl": {
               "version": "1.0.3",
@@ -1153,13 +1149,17 @@
               "version": "1.0.1",
               "from": "form-data@1.0.1"
             },
-            "lodash": {
-              "version": "4.16.4",
-              "from": "lodash@4.16.4"
+            "async": {
+              "version": "2.1.2",
+              "from": "async@2.1.2"
             },
             "qs": {
               "version": "5.2.1",
               "from": "qs@5.2.1"
+            },
+            "lodash": {
+              "version": "4.16.4",
+              "from": "lodash@4.16.4"
             },
             "tough-cookie": {
               "version": "2.2.2",
