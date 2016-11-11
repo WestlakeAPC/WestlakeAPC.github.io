@@ -16,6 +16,18 @@ html(lang='en-us')
             img(src='/images/WestlakeAPC.png', style='width: 25%', alt='Westlake APC Logo')
             h1.project-name Westlake Accessible Programming Club
             h2.project-tagline Westlake High School's experimental programming club.
+
+            // Navigation bar
+            a(href="{{ site.url }}/#current-projects" class="btn")
+                | Current Projects
+            a(href="{{ site.url }}/#our-purpose" class="btn")
+                | Our Purpose
+            a(href="{{ site.url }}/#meeting-schedule" class="btn")
+                | Meeting Schedule
+            a(href="{{ site.url }}/#want-to-join-yet" class="btn")
+                | How to Join
+            a(href="{{ site.url }}/#external-funding" class="btn")
+                | External Funding
         section.main-content
             | {{ content }}
             footer.site-footer

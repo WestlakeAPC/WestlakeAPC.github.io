@@ -320,6 +320,10 @@ a:hover {
 .project-icon {
 }
 
+.btn:visited {
+  color: rgba(255, 255, 255, 0.7);
+}
+
 @media screen and (min-width: 64em) {
   .site-footer {
     font-size: 1rem;
