@@ -19,7 +19,7 @@
     "gulp-shrinkwrap": "^2.0.1",
     "gulp-typescript": "^3.0.2",
     "gulp-yarn": "^0.0.3",
-    "typescript": "^2.0.8",
+    "typescript": "^2.0.9",
     "yarn": "^0.16.1"
   },
   "repository": {
