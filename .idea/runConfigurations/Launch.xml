@@ -3,7 +3,9 @@
     <node-interpreter>project</node-interpreter>
     <node-options />
     <gulpfile>$PROJECT_DIR$/gulpfile.babel.js</gulpfile>
-    <tasks />
+    <tasks>
+      <task>default</task>
+    </tasks>
     <arguments />
     <envs />
     <method />
