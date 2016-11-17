@@ -843,9 +843,9 @@ browser-sync-ui@0.6.1:
     stream-throttle "^0.1.3"
     weinre "^2.0.0-pre-I0Z7U9OV"
 
-browser-sync@^2.17.6:
-  version "2.17.6"
-  resolved "https://registry.yarnpkg.com/browser-sync/-/browser-sync-2.17.6.tgz#9ea2c205031d12bb27905b5a602999528d1ecfdb"
+browser-sync@^2.18.1:
+  version "2.18.1"
+  resolved "https://registry.yarnpkg.com/browser-sync/-/browser-sync-2.18.1.tgz#1850534f064ded1505dfca38ac18078abef4be9f"
   dependencies:
     browser-sync-client "^2.3.3"
     browser-sync-ui "0.6.1"
@@ -4750,9 +4750,9 @@ yargs@6.0.0:
     y18n "^3.2.1"
     yargs-parser "^4.0.2"
 
-yarn@^0.17.0:
-  version "0.17.0"
-  resolved "https://registry.yarnpkg.com/yarn/-/yarn-0.17.0.tgz#5bd2e69a6a22cafb537b6fb62e27b217c4d6e6c5"
+yarn@^0.17.3:
+  version "0.17.3"
+  resolved "https://registry.yarnpkg.com/yarn/-/yarn-0.17.3.tgz#1da979534eb2c119c95e3c1cca9e9733c5be8699"
   dependencies:
     babel-runtime "^6.0.0"
     bytes "^2.4.0"
