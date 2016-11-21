@@ -6,8 +6,8 @@ define(["require", "exports"], function (require, exports) {
     var greeting = (function () {
         function greeting() {
         }
-        greeting.something = "Steven is awesome and helps me do gulp!";
         return greeting;
     }());
     exports.greeting = greeting;
+    greeting.something = "Steven is awesome and helps me do gulp!";
 });
