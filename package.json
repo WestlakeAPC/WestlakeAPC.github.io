@@ -21,7 +21,7 @@
     "gulp-yarn": "^0.0.3",
     "npm": "^4.0.3",
     "typescript": "^2.1.1",
-    "yarn": "^0.17.10"
+    "yarn": "^0.18.0"
   },
   "repository": {
     "type": "git",
