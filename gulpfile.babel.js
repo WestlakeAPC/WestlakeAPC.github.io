@@ -119,7 +119,7 @@ const yarnShrinkwrap = () => gulp.src('package.json')
  * compile the jekyll site, launch BrowserSync & watch files.
  */
 const preproccess = gulp.parallel(styles, markup, scripts);
-const build = gulp.series(preproccess, jekyllBuild, npmShrinkwrap, yarnShrinkwrap);
+const build = gulp.series(preproccess, jekyllBuild, /*npmShrinkwrap, yarnShrinkwrap*/);
 const watchTask = gulp.series(build, browser, watch);
 
 export {markup, styles, jekyllRebuild, browser, npmShrinkwrap, yarnShrinkwrap, preproccess, build, watchTask};
