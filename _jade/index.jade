@@ -12,13 +12,13 @@ p
     | The Westlake Accessible Programming Club, or simply APC, is an in-school venture to help explain basic logical
     | concepts in a way that tailors to students’ individual learning styles. With three skilled mentors secured for
     | the club, (
-    a(href="profiles/josephjin.html")
+    a(href="{{ '/profiles/josephjin.html' | relative_url }}")
         | Joseph Jin
     | ,&nbsp;
-    a(href="profiles/elibradley.html")
+    a(href="{{ '/profiles/elibradley.html' | relative_url }}")
         | Eli Bradley
     | , and&nbsp;
-    a(href="profiles/samhollenbeck.html")
+    a(href="{{ '/profiles/samhollenbeck.html' | relative_url }}")
         | Sam Hollenbeck
     | ,) whose games and utilities have already managed to pass
     | Apple’s strict App Review process, we think exploration of the concepts that power everything from server to
@@ -62,7 +62,7 @@ table
     tr#ImmolationOrganization
         td(style='width: 25%')
             a(href='https://github.com/WestlakeAPC/game-off-2016', target='_blank')
-                img.project-icon(src='images/ImmolationOrganization.icns', alt="Death Dodger")
+                img.project-icon(src='images/ImmolationOrganization.icns', alt="Immolation Organization")
         td
             a(href='https://github.com/WestlakeAPC/game-off-2016', target='_blank', style='color: #606c71; text-decoration:none;')
                 h1
@@ -77,6 +77,17 @@ table
                 i
                     | hacking&nbsp;
                 | away at and destroying alien spacecrafts!
+    tr#HWWTGO
+        td(style='width: 25%')
+            a(href='https://github.com/WestlakeAPC/game-off-2016', target='_blank')
+                img.project-icon(src='images/ImmolationOrganization.icns', alt="HWWTGO")
+        td
+            a(href="{{ '/documents/HWWTGO.pdf' | relative_url }}", target='_blank', style='color: #606c71; text-decoration:none;')
+                h1
+                    | How We Won the Game Off, By Eli B.
+                | The story of our decision to study and procrastinate&mdash;giving us only six days to develop one of GitHub’s favorite games.&nbsp;
+            a(href="{{ '/documents/HWWTGO.pages' | relative_url }}", target='_blank', style='color: #606c71; text-decoration:none;')
+                | View the source here.
 h1
     a#meeting-schedule.anchor(href='#meeting-schedule', aria-hidden='true')
         span.octicon.octicon-link(aria-hidden='true')
