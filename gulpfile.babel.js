@@ -21,7 +21,7 @@ const paths = {
         dest: '.'
     },
     styles: {
-        src: '_scss/**/*.scss',
+        src: '_scss/stylesheet.scss',
         dest: 'css'
     },
     scripts: {
@@ -43,7 +43,7 @@ const markup = () => gulp.src(paths.markup.src)
  */
 const styles = () => gulp.src(paths.styles.src)
     .pipe(sass({
-        includePaths: ['scss'],
+        includePaths: ['scss/stylesheet.css'],
         onError: browserSync.notify
     }))
     .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
