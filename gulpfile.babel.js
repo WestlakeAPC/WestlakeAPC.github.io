@@ -7,7 +7,6 @@ import prefix from 'gulp-autoprefixer';
 import cp from 'child_process';
 import jade from 'gulp-jade';
 import ts from 'gulp-typescript';
-import shrinkwrap from 'gulp-shrinkwrap';
 import yarn from 'gulp-yarn';
 
 let jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
@@ -100,15 +99,6 @@ export function watch() {
 }
 
 /**
- * NPM shrinkwrap task.
- */
-const npmShrinkwrap = () => gulp.src('package.json')
-    .pipe(shrinkwrap({
-        dev: true
-    }))
-    .pipe(gulp.dest('.'));
-
-/**
  * Yarnfile generation task.
  */
 const yarnShrinkwrap = () => gulp.src('package.json')
@@ -119,8 +109,8 @@ const yarnShrinkwrap = () => gulp.src('package.json')
  * compile the jekyll site, launch BrowserSync & watch files.
  */
 const preproccess = gulp.parallel(styles, markup, scripts);
-const build = gulp.series(preproccess, jekyllBuild, npmShrinkwrap, yarnShrinkwrap);
+const build = gulp.series(preproccess, jekyllBuild, yarnShrinkwrap);
 const watchTask = gulp.series(build, browser, watch);
 
-export {markup, styles, jekyllRebuild, browser, npmShrinkwrap, yarnShrinkwrap, preproccess, build, watchTask};
+export {markup, styles, jekyllRebuild, browser, yarnShrinkwrap, preproccess, build, watchTask};
 export default watchTask;

@@ -11,17 +11,16 @@
   "devDependencies": {
     "babel-preset-latest": "^6.16.0",
     "babel-register": "^6.18.0",
-    "browser-sync": "^2.18.5",
+    "browser-sync": "^2.18.6",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "3.1.1",
     "gulp-jade": "^1.1.0",
-    "gulp-sass": "^3.0.0",
+    "gulp-sass": "^3.1.0",
     "gulp-shrinkwrap": "^2.0.3",
-    "gulp-typescript": "^3.1.3",
+    "gulp-typescript": "^3.1.4",
     "gulp-yarn": "^0.0.5",
     "npm": "^4.0.5",
-    "typescript": "^2.1.4",
-    "yarn": "^0.18.1"
+    "typescript": "^2.1.4"
   },
   "repository": {
     "type": "git",
@@ -35,5 +34,6 @@
   "bugs": {
     "url": "https://github.com/WestlakeAPC/WestlakeAPC.github.io/issues"
   },
-  "homepage": "https://WestlakeAPC.github.io/"
+  "homepage": "https://WestlakeAPC.github.io/",
+  "dependencies": {}
 }
