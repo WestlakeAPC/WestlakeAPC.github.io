@@ -4,8 +4,8 @@ The Westlake APC public website.
 ## Dependencies
 
 - Jekyll 3.3.1
-- Node.js 7.1.0
-- NPM 4.0.2 _**or**_ Yarn 0.17.6 (for CLI)
+- Node.js 7.4.0
+- Yarn 0.18.1 (for CLI)
 - Gulp 4.0 (for CLI)
 
 ## Before committing/submitting PRs

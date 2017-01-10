@@ -20,8 +20,7 @@
     "gulp-typescript": "^3.1.4",
     "gulp-yarn": "^0.0.5",
     "npm": "^4.0.5",
-    "typescript": "^2.1.4",
-    "yarn": "^0.18.1"
+    "typescript": "^2.1.4"
   },
   "repository": {
     "type": "git",
@@ -35,5 +34,6 @@
   "bugs": {
     "url": "https://github.com/WestlakeAPC/WestlakeAPC.github.io/issues"
   },
-  "homepage": "https://WestlakeAPC.github.io/"
+  "homepage": "https://WestlakeAPC.github.io/",
+  "dependencies": {}
 }
