@@ -5,7 +5,7 @@ import browserSync from 'browser-sync';
 import sass from 'gulp-sass';
 import prefix from 'gulp-autoprefixer';
 import cp from 'child_process';
-import jade from 'gulp-jade';
+import pug from 'gulp-pug';
 import ts from 'gulp-typescript';
 import yarn from 'gulp-yarn';
 
@@ -16,7 +16,7 @@ let messages = {
 
 const paths = {
     markup: {
-        src: '_jade/**/*.jade',
+        src: '_pug/**/*.pug',
         dest: '.'
     },
     styles: {
@@ -30,10 +30,10 @@ const paths = {
 };
 
 /**
- * Gulp Task for jade compilation
+ * Gulp Task for pug compilation
  */
 const markup = () => gulp.src(paths.markup.src)
-    .pipe(jade())
+    .pipe(pug())
     .pipe(gulp.dest(paths.markup.dest))
     .pipe(browserSync.reload({stream: true}));
 
