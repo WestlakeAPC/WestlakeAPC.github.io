@@ -14,6 +14,7 @@
     "browser-sync": "^2.18.6",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "3.1.1",
+    "gulp-pug": "^3.2.0",
     "gulp-sass": "^3.1.0",
     "gulp-shrinkwrap": "^2.0.3",
     "gulp-typescript": "^3.1.4",
@@ -34,7 +35,5 @@
     "url": "https://github.com/WestlakeAPC/WestlakeAPC.github.io/issues"
   },
   "homepage": "https://WestlakeAPC.github.io/",
-  "dependencies": {
-    "gulp-pug": "^3.2.0"
-  }
+  "dependencies": {}
 }
