@@ -16,7 +16,7 @@ The Westlake APC public website.
 https://github.com/WestlakeAPC/WestlakeAPC.github.io.git && cd WestlakeAPC.github.io
 
 # Install ES and Ruby dependencies.
-npm install && bundle install
+yarn && bundle install
 
 # Run default gulp task to build project.
 gulp
