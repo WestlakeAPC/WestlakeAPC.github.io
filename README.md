@@ -3,7 +3,8 @@ The Westlake APC public website.
 
 ## Dependencies
 
-- Jekyll 3.3.1
+- Ruby 3.3
+- Bundler 1.13.7
 - Node.js 7.4.0
 - Yarn 0.18.1 (for CLI)
 - Gulp 4.0 (for CLI)
