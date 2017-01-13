@@ -9,7 +9,6 @@ import pug from 'gulp-pug';
 import ts from 'gulp-typescript';
 import yarn from 'gulp-yarn';
 
-let jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 let messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
@@ -66,7 +65,7 @@ export function scripts() {
  */
 export function jekyllBuild(done) {
     browserSync.notify(messages.jekyllBuild);
-    return cp.spawn(jekyll, ['build'], {stdio: 'inherit'})
+    return cp.spawn('bundle', ['exec', 'jekyll', 'build'], {stdio: 'inherit'})
         .on('close', done);
 }
 
