@@ -1,4 +1,4 @@
-# WestlakeAPC.github.io
+# WestlakeAPC.github.io [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 The Westlake APC public website.
 
 ## Dependencies
