@@ -1919,9 +1919,9 @@ gulp-util@^3.0, gulp-util@^3.0.0, gulp-util@^3.0.2, gulp-util@^3.0.4, gulp-util@
     through2 "^2.0.0"
     vinyl "^0.5.0"
 
-gulp-yarn@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/gulp-yarn/-/gulp-yarn-0.0.5.tgz#b63555327420e91070cd8203af921bb5174f933f"
+gulp-yarn@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/gulp-yarn/-/gulp-yarn-0.1.0.tgz#3f4c30be817f8154814297bdc20b1fe89a2d064a"
   dependencies:
     gulp-util "^3.0.4"
     through2 "^2.0.0"
