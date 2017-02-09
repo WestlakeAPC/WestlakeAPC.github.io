@@ -2,9 +2,3 @@ name: Your New Jekyll Site
 markdown: redcarpet
 highlighter: rouge # or rouge or null
 exclude: ["node_modules", "gulpfile.babel.js", "gulpfile.js", "package.json", "params.json", "tsconfig.json", "npm-shrinkwrap.json", "yarn.lock", "_pug", "_scss", "_ts"]
-
-title: Westlake Accessible Programming Club
-description: Westlake High School's experimental programming club.
-google_analytics: 
-show_downloads: true
-theme: jekyll-theme-cayman
