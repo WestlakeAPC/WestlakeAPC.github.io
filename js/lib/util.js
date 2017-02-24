@@ -3,6 +3,7 @@
  */
 define(["require", "exports"], function (require, exports) {
     "use strict";
+    exports.__esModule = true;
     var greeting = (function () {
         function greeting() {
         }
