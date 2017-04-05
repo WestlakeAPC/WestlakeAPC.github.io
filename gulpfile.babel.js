@@ -8,6 +8,7 @@ import cp from 'child_process'
 import pug from 'gulp-pug'
 import ts from 'gulp-typescript'
 import yarn from 'gulp-yarn'
+import standard from 'gulp-standard'
 
 let messages = {
   jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -85,6 +86,13 @@ const browser = () => browserSync({
   }
 })
 
+const format = () => gulp.src(['./gulpfile.babel.js'])
+    .pipe(standard())
+    .pipe(standard.reporter('default', {
+      breakOnError: true,
+      quiet: true
+    }))
+
 /**
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
@@ -108,7 +116,7 @@ const yarnShrinkwrap = () => gulp.src('package.json')
  * compile the jekyll site, launch BrowserSync & watch files.
  */
 const preproccess = gulp.parallel(styles, markup, scripts)
-const build = gulp.series(preproccess, jekyllBuild, yarnShrinkwrap)
+const build = gulp.series(preproccess, jekyllBuild, yarnShrinkwrap, format)
 const watchTask = gulp.series(build, browser, watch)
 
 export {markup, styles, jekyllRebuild, browser, yarnShrinkwrap, preproccess, build, watchTask}
