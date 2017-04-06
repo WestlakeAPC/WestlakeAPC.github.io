@@ -9,6 +9,7 @@ import pug from 'gulp-pug'
 import ts from 'gulp-typescript'
 import yarn from 'gulp-yarn'
 import standard from 'gulp-standard'
+import amperize from 'gulp-amperify'
 
 let messages = {
   jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -17,7 +18,7 @@ let messages = {
 const paths = {
   markup: {
     src: '_pug/**/*.pug',
-    dest: '.'
+    dest: 'html'
   },
   styles: {
     src: '_scss/stylesheet.scss',
@@ -26,6 +27,10 @@ const paths = {
   scripts: {
     src: '_ts/**/*.ts',
     dest: 'js'
+  },
+  amp: {
+    src: 'html/**/*.html',
+    dest: 'amp'
   }
 }
 
@@ -86,12 +91,16 @@ const browser = () => browserSync({
   }
 })
 
-const format = () => gulp.src(['./gulpfile.babel.js'])
+const format = () => gulp.src('./gulpfile.babel.js')
     .pipe(standard())
     .pipe(standard.reporter('default', {
       breakOnError: true,
       quiet: true
     }))
+
+const amp = () => gulp.src(paths.amp.src)
+    .pipe(amperize())
+    .pipe(gulp.dest(paths.amp.dest))
 
 /**
  * Watch scss files for changes & recompile
@@ -115,9 +124,9 @@ const yarnShrinkwrap = () => gulp.src('package.json')
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
-const preproccess = gulp.parallel(styles, markup, scripts)
+const preproccess = gulp.parallel(styles, gulp.series(markup, amp), scripts)
 const build = gulp.series(preproccess, jekyllBuild, yarnShrinkwrap, format)
-const watchTask = gulp.series(build, browser, watch)
+const test = gulp.series(build, browser, watch)
 
-export {markup, styles, jekyllRebuild, browser, yarnShrinkwrap, preproccess, build, watchTask}
-export default watchTask
+export {markup, styles, jekyllRebuild, browser, yarnShrinkwrap, preproccess, build, test, format, amp}
+export default test
