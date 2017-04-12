@@ -20,7 +20,7 @@
     "gulp-standard": "^9.0.0",
     "gulp-typescript": "^3.1.6",
     "gulp-yarn": "^0.1.1",
-    "npm": "^4.4.4",
+    "npm": "^4.5.0",
     "typescript": "^2.2.2"
   },
   "repository": {
