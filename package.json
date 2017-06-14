@@ -11,7 +11,7 @@
   "devDependencies": {
     "babel-preset-latest": "^6.24.1",
     "babel-register": "^6.24.1",
-    "browser-sync": "^2.18.9",
+    "browser-sync": "^2.18.10",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "4.0.0",
     "gulp-pug": "^3.3.0",
