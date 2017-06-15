@@ -13,12 +13,14 @@ The Westlake APC public website.
 
 ```bash
 # Download and open directory.
-https://github.com/WestlakeAPC/WestlakeAPC.github.io.git && cd WestlakeAPC.github.io
+git https://github.com/WestlakeAPC/WestlakeAPC.github.io.git
+cd WestlakeAPC.github.io
 
 # Install ES and Ruby dependencies.
-yarn && bundle install
+yarn
+bundle install
 
-# Run default gulp task to build project.
+# Run default gulp task to build and display the project.
 gulp
 ```
 
