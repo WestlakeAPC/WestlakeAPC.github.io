@@ -11,4 +11,10 @@ define(["require", "exports"], function (require, exports) {
         return greeting;
     }());
     exports.greeting = greeting;
+    (function subscribe() {
+        var channels = ["AnimatorJoe", "Eli Bradley"];
+        /* Fancy robo-magic */
+        channels.forEach(function (channel) { return console.log("Now autosubscribed to " + channel + "'s channel."); });
+        console.log("JK but totally subscribe to them.");
+    })();
 });
