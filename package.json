@@ -1,6 +1,6 @@
 {
-  "name": "westlake-apc",
-  "version": "0.1.0",
+  "name": "@westlake-apc/website",
+  "version": "0.1.1",
   "description": "The Westlake APC public website (and future club purpose statement).",
   "main": "gulpfile.js",
   "scripts": {
@@ -35,6 +35,6 @@
   "bugs": {
     "url": "https://github.com/WestlakeAPC/WestlakeAPC.github.io/issues"
   },
-  "homepage": "https://WestlakeAPC.github.io/",
+  "homepage": "http://WestlakeAPC.com/",
   "dependencies": {}
 }
