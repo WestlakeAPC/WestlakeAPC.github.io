@@ -117,7 +117,7 @@ const yarnShrinkwrap = () => gulp.src('package.json')
  */
 const preproccess = gulp.parallel(styles, markup, scripts)
 const build = gulp.series(preproccess, jekyllBuild, yarnShrinkwrap, format)
-const watchTask = gulp.series(build, browser, watch)
+const test = gulp.series(build, browser, watch)
 
-export {markup, styles, jekyllRebuild, browser, yarnShrinkwrap, preproccess, build, watchTask}
-export default watchTask
+export {markup, styles, jekyllRebuild, browser, yarnShrinkwrap, preproccess, build, format, test}
+export default test
