@@ -1,0 +1,8 @@
+# Force reviews for changes to actual site.
+# Inactive until protected branches go on.
+
+*.js               @WestlakeAPC/website
+*.html             @WestlakeAPC/website
+*.css              @WestlakeAPC/website
+
+!gulpfile.babel.js @WestlakeAPC/website # Not the gulpfile

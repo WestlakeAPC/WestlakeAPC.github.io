@@ -1,4 +1,26 @@
 name: Your New Jekyll Site
 markdown: redcarpet
 highlighter: rouge # or rouge or null
-exclude: ["node_modules", "gulpfile.babel.js", "gulpfile.js", "package.json", "params.json", "tsconfig.json", "npm-shrinkwrap.json", "yarn.lock", "_pug", "_scss", "_ts"]
+exclude: [
+  # Project files
+  "gulpfile.babel.js",
+  "package.json",
+  "tsconfig.json",
+  "Gemfile",
+
+  # Source files
+  "_pug",
+  "_scss",
+  "_ts",
+
+  # Generated
+  "node_modules",
+  "params.json",
+  "yarn.lock",
+  "Gemfile.lock",
+
+  # Project information
+  "CODEOWNERS",
+  "README.md",
+  "LICENSE"
+]
